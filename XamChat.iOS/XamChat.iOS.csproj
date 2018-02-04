@@ -107,6 +107,11 @@
   <ItemGroup>
     <Content Include="Entitlements.plist" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\XamChat.Core\XamChat.Core.csproj">
+      <Project>{569969b3-db09-414a-aa1b-2f56cb288796}</Project>
+      <Name>XamChat.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

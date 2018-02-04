@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using XamChat.Core;
 
 namespace XamChat.iOS
 {
@@ -19,8 +20,15 @@ namespace XamChat.iOS
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            // Override point for customization after application launch.
-            // If not required for your application you can safely delete this method
+            /* View Models */
+            ServiceContainer.Register<LoginViewModel>(() => new LoginViewModel());
+            ServiceContainer.Register<RegisterViewModel>(() => new RegisterViewModel());
+            ServiceContainer.Register<FriendViewModel>(() => new FriendViewModel());
+            ServiceContainer.Register<MessageViewModel>(() => new MessageViewModel());
+
+            /* Models */
+            ServiceContainer.Register<ISettings>(() => new FakeSettings());
+            ServiceContainer.Register<IWebService>(() => new FakeWebService());
 
             return true;
         }
