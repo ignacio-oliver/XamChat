@@ -27,6 +27,7 @@ namespace XamChat.Core
             {
                 return service.Value;
             }
+
             throw new Exception("Service not found!");
         }
     }

@@ -88,10 +88,31 @@
     <Compile Include="Controllers\LoginController.designer.cs">
       <DependentUpon>LoginController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\ConversationsController.cs" />
+    <Compile Include="Controllers\ConversationsController.designer.cs">
+      <DependentUpon>ConversationsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FriendsController.cs" />
+    <Compile Include="Controllers\FriendsController.designer.cs">
+      <DependentUpon>FriendsController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Views\MyMessageCell.cs" />
+    <Compile Include="Views\MyMessageCell.designer.cs">
+      <DependentUpon>MyMessageCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TheirMessageCell.cs" />
+    <Compile Include="Views\TheirMessageCell.designer.cs">
+      <DependentUpon>TheirMessageCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BaseMessageCell.cs" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
+    <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Controllers\MessagesController.designer.cs">
+      <DependentUpon>MessagesController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
