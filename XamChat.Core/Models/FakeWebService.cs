@@ -12,7 +12,7 @@ namespace XamChat.Core
 
         public FakeWebService()
         {
-            SleepDuration = 100;
+            SleepDuration = 1500;
         }
 
         private Task Sleep()
