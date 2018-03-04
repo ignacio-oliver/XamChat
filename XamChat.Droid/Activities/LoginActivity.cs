@@ -43,7 +43,8 @@ namespace XamChat.Droid.Activities
             try
             {
                 await viewModel.Login();
-                //TODO: navigate to a new activity
+
+                StartActivity(typeof(ConversationsActivity));
             }
             catch(Exception exc)
             {
